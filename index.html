@@ -1,0 +1,33 @@
+<!-- Write a JavaScript funtion that reverse a number 
+        Sample Data and Output
+        Example x = 32243;
+        Expected Output: 34223
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise Day 1</title>
+    </head>
+
+    <body onload="reverse()">
+        <script>
+            function reverse() {
+
+                var r = prompt("enter a number");
+                var t = r.split('').reverse().join('');
+                document.write(t);
+            } 
+        </script>
+    </body>
+    <!-- 
+        *split() - method splits a String object into an array of string by separating the string into sub strings
+        *reverse()- method reverses an array in place. The first array element becomes the last and the last becomes the first element
+        *join()- method joins all elements of an array into a string.
+      -->
+
+</html>
